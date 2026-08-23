@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Billar 60</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="contenedor">
+
+        <div class="bola">
+            <span>8</span>
+        </div>
+
+        <h1>CALCULADORA DE BILLAR</h1>
+        <p class="subtitulo">60 PUNTOS FIRMES</p>
+
+        <div class="tarjeta">
+
+            <label for="malas">¿Cuántas malas tiene?</label>
+
+            <div class="entrada">
+                <button id="menos">−</button>
+
+                <input
+                    type="number"
+                    id="malas"
+                    min="0"
+                    value="0"
+                >
+
+                <button id="mas">+</button>
+            </div>
+
+            <div class="opciones">
+
+                <button class="opcion rival activa" id="botonRival">
+                    <span>🎱</span>
+                    MALAS DEL RIVAL
+                </button>
+
+                <button class="opcion propias" id="botonPropias">
+                    <span>🎱</span>
+                    MIS MALAS
+                </button>
+
+            </div>
+
+            <div class="resultado">
+
+                <p id="textoResultado">
+                    Usted necesita
+                </p>
+
+                <div id="resultado">
+                    61
+                </div>
+
+                <p id="unidad">
+                    puntos para ganar
+                </p>
+
+            </div>
+
+            <div class="explicacion" id="explicacion">
+                Con 0 malas del rival, usted necesita 61 puntos.
+            </div>
+
+        </div>
+
+        <p class="pie">
+            Billar • 60 puntos firmes
+        </p>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
