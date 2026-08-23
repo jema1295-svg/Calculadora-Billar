@@ -184,3 +184,15 @@ botonPropias.addEventListener("click", function () {
 // ==========================================
 
 calcular();
+const campoMalas = document.getElementById("malas");
+
+campoMalas.addEventListener("focus", function () {
+    if (this.value === "0") {
+        this.value = "";
+    }
+});
+campoMalas.addEventListener("input", function () {
+    if (this.value === "0") {
+        this.value = "";
+    }
+});
